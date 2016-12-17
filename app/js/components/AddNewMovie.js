@@ -25,8 +25,8 @@ class AddNewMovie extends Component {
       }
     }
     this.props.addMovie({ title, genre, year, rating, actors })
+    //this.props.exit()
   }
-
 
   render() {
     const { actorCount } = this.state

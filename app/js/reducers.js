@@ -4,8 +4,9 @@ export default (state = {
 }, action) => {
   switch (action.type) {
     case 'ADD_MOVIE':
+      console.log(action)
       return {...state,
-        movieList: [...movieList, action.movieData]
+        movieList: [...state.movieList, action.movieData]
       }
     default:
       return state
