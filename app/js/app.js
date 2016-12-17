@@ -1,90 +1,51 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-
+import AddNewMovie from './components/AddNewMovie'
+import ViewAndEditMovies from './components/ViewAndEditMovies'
+import SearchMovies from './components/SearchMovies'
 
 export class App extends Component {
   constructor() {
     super()
     this.state = {
-      displayValue: '0',
-      operatorApplied: null,
-      leftOperand: null
-    }
-  }
-
-  numberClicked = (number) => {
-    const {
-      displayValue,
-      operatorApplied,
-      leftOperand
-    } = this.state
-    if (operatorApplied) {
-      operatorApplied(leftOperand, Math.parseFloat(displayValue))
-      //TODO
-    } else {
-      if (displayValue === '0') {
-        this.setState({
-          displayValue: number.toString()
-        })
-      } else if (displayValue.length < 7) {
-        this.setState({
-          displayValue: displayValue + number.toString()
-        })
-      } else {
-        // limit reached
-      }
+      //content: null,
+      component: null,
+      selectedIndex: null,
+      navItems: [
+        { label: "Add New Movie", component: <AddNewMovie/> },
+        { label: "View and Edit Movies", component: <ViewAndEditMovies/> },
+        { label: "Search Movies", component: <SearchMovies/> },
+      ]
     }
   }
 
   render() {
-    const {
-      displayValue,
-    } = this.state
+    const { component, navItems, selectedIndex }  = this.state
     return (
-      <div id="calculator" className="calculator">
-        <div className="calculator__results">
-          { displayValue }
+      <div className='app'>
+        <div className='app__nav'>
+          <div className='app__nav__header'>
+            Home Movie DB
+          </div>
+          {
+            navItems.map((item, i) => {
+              const cssClass = 'app__nav' + (selectedIndex === i ? '__selected' : '__item')
+              return (
+                <div className={cssClass} key={i} onClick={ () => this.setState({ component: item.component, selectedIndex: i })}>
+                  { item.label }
+                </div>
+              )
+            })
+          }
         </div>
-        <div className="calculator__keypad">
-          <div className="calculator__keypad__row">
-            <button>AC</button>
-            <button>+/−</button>
-            <button>%</button>
-            <button>÷</button>
-          </div>
-          <div className="calculator__keypad__row">
-            <button onClick={() => this.numberClicked(7)}>7</button>
-            <button onClick={() => this.numberClicked(8)}>8</button>
-            <button onClick={() => this.numberClicked(9)}>9</button>
-            <button>×</button>
-          </div>
-          <div className="calculator__keypad__row">
-            <button onClick={() => this.numberClicked(4)}>4</button>
-            <button onClick={() => this.numberClicked(5)}>5</button>
-            <button onClick={() => this.numberClicked(6)}>6</button>
-            <button>−</button>
-          </div>
-          <div className="calculator__keypad__row">
-            <button onClick={() => this.numberClicked(1)}>1</button>
-            <button onClick={() => this.numberClicked(2)}>2</button>
-            <button onClick={() => this.numberClicked(3)}>3</button>
-            <button>+</button>
-          </div>
-          <div className="calculator__keypad__row">
-            <button className="zero">0</button>
-            <button>.</button>
-            <button>=</button>
-          </div>
-        </div>
+        { component }
       </div>
     )
   }
 }
 
 export default connect(
-  (state) => ({
-    doc: state.doc
-  }),
-  (dispatch) => bindActionCreators(DocActions, dispatch)
+  (store) => ({ store }),
+  (dispatch) => ({})
 )(App)
 

@@ -6,37 +6,107 @@
   box-sizing: border-box;
 }
 
-div.calculator {
-  &__results {
-    height: 220px;
-    color: white;
-    font-size: 10rem;
-    text-align: right;
-    padding: 10px;
-  }
-  width: calc(160px * 4);
-  background-color: #000;
-  &__keypad {
-    height: calc(160px * 5);
+html body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  user-select: none;
+}
+
+div.app {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #cce;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  &__nav {
+    height: 100%;
+    width: 25vw;
+    color: #eee;
+    background-color: rgba(0, 0, 0, 0.65);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: stretch;
-    &__row {
+    justify-content: flex-start;
+    &__item {
+      padding: 15px 30px;
+      cursor: pointer;
+      margin-bottom: 1px;
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+    }
+    &__selected {
+      padding: 15px 30px;
+      cursor: default;
+      margin-bottom: 1px;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+    &__header {
+      color: #eed;
+      padding: 30px 15px;
+      font-size: 1.3rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+      background-color: rgba(0, 0, 0, 0.9);
+      cursor: default;
+    }
+  }
+  &__content {
+    overflow-y: auto;
+    width: 100%;
+    padding: 15px 20px;
+    height: 100%;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: top;
+    &__header {
+      font-size: 1.9rem;
+      font-style: italic;
+      font-weight: 800;
+      margin-bottom: 10px;
+      cursor: default;
+    }
+    &__wrapper {
       display: flex;
-      flex-direction: row;
-      //flex: 1;
-      height: 100%;
-      button {
-        width: 160px;
-        font-size: 4rem;
-        &.zero {
-          width: 320px;
-        }
+      flex-direction: column;
+      input {
+        margin: 10px 0px;
+        width: 300px;
       }
     }
   }
 }
+
+div.regularButton {
+  font-size: 20px;
+  padding: 5px;
+  max-width: 300px;
+  cursor: pointer;
+  background-color: #eee;
+  text-align: center;
+  border: 1px solid #888;
+  &:hover {
+    background-color: #ddd;
+  }
+}
+
+
+input {
+  outline: none;
+  padding: 8px;
+  border: 1px solid #999;
+
+  border-radius: 3px;
+  box-shadow: none;
+}
+
 
 button {
 
