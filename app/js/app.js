@@ -1,44 +1,42 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import AddNewMovie from './components/AddNewMovie'
-import ViewAndEditMovies from './components/ViewAndEditMovies'
-import SearchMovies from './components/SearchMovies'
+import ViewMovies from './components/ViewMovies'
+import EditMovies from './components/EditMovies'
 
 export class App extends Component {
   constructor() {
     super()
     this.state = {
-      //content: null,
-      component: null,
-      selectedIndex: null,
+      selectedIndex: 0,
       navItems: [
-        { label: "Add New Movie", component: <AddNewMovie/> },
-        { label: "View and Edit Movies", component: <ViewAndEditMovies/> },
-        { label: "Search Movies", component: <SearchMovies/> },
+        { label: 'My Movies', component: <ViewMovies/> },
+        { label: 'Add Movie', component: <AddNewMovie/> },
+        { label: 'Edit Movies', component: <EditMovies/> },
       ]
     }
   }
 
   render() {
-    const { component, navItems, selectedIndex }  = this.state
+    const { navItems, selectedIndex }  = this.state
     return (
       <div className='app'>
         <div className='app__nav'>
           <div className='app__nav__header'>
-            Home Movie DB
+            Home Movies
           </div>
           {
-            navItems.map((item, i) => {
-              const cssClass = 'app__nav' + (selectedIndex === i ? '__selected' : '__item')
-              return (
-                <div className={cssClass} key={i} onClick={ () => this.setState({ component: item.component, selectedIndex: i })}>
-                  { item.label }
-                </div>
-              )
-            })
+            // populate the nav menu
+            navItems.map((item, i) =>
+              <div key={i}
+                className={'app__nav' + (selectedIndex === i ? '__selected' : '__item')}
+                onClick={ () => this.setState({ selectedIndex: i })}>
+                { item.label }
+              </div>
+            )
           }
         </div>
-        { component }
+        { navItems[selectedIndex].component }
       </div>
     )
   }

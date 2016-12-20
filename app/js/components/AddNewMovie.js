@@ -15,6 +15,14 @@ class AddNewMovie extends Component {
 
   submitNewMovie() {
     const title = this.refs.title.value
+    // ensure that a title has been provided, exit if not
+    if (!title) {
+      this.setState({
+        successMessage: null,
+        titleError: true
+      })
+      return
+    }
     const genre = this.refs.genre.value
     const year = this.refs.year.value
     const rating = this.refs.rating.value
@@ -24,47 +32,64 @@ class AddNewMovie extends Component {
         actors.push(this.refs['actor'+i].value)
       }
     }
+    // SUCCESS
     this.props.addMovie({ title, genre, year, rating, actors })
-    //this.props.exit()
+    this.refs.title.value = ''
+    this.refs.genre.value = ''
+    this.refs.year.value = ''
+    this.refs.rating.value = ''
+    this.setState({
+      successMessage: 'Added '+ title +' to your collection!',
+      titleError: false
+    })
   }
 
   render() {
-    const { actorCount } = this.state
+    const { actorCount, titleError, successMessage } = this.state
     return (
       <div className='app__content'>
         <div className='app__content__header'>
           Add a movie to your collection
         </div>
+        { 
+          // if added successfully, display message
+          successMessage ?
+          <div className='successMessage'>
+            { successMessage }
+          </div> : null
+        }
         <div className='app__content__wrapper'>
-          Title
-          <input type='text' ref='title' placeholder='Enter title'/>
-          Genre
-          <input type='text' ref='genre' placeholder='Enter Genre'/>
-          Year
-          <input type='text' ref='year' placeholder='Enter Year'/>
-          Rating
-          <input type='text' ref='rating' placeholder='Rating'/>
-          Actors (Max 5)
-          <div 
-            className='regularButton'
+          { 
+            // if no title provided, display this error
+            titleError ?
+            <div className='errorMessage'>
+              You must provide a movie title.
+            </div> : null
+          }
+          <input type='text' ref='title' placeholder='Enter title' className='addMovie'/>
+          <input type='text' ref='genre' placeholder='Enter Genre' className='addMovie'/>
+          <input type='text' ref='year' placeholder='Enter Year' className='addMovie'/>
+          <input type='text' ref='rating' placeholder='Rating' className='addMovie'/>
+          <button 
+            className='small'
             disabled={actorCount >= MAX_ACTORS}
             onClick={ () => this.setState({ actorCount: actorCount + (actorCount < MAX_ACTORS ? 1 : 0) }) }>
             Add Another Actor
-          </div>
-          <div 
-            className='regularButton'
+          </button>
+          <button 
+            className='small'
             onClick={ () => this.setState({ actorCount: actorCount - (actorCount > 1 ? 1 : 0) }) }>
             Remove Last Actor
-          </div>
+          </button>
           {
-            _.times(actorCount, (i) => <input key={i} type='text' placeholder={'Actor '+(i+1)} ref={'actor'+i}/> )
+            _.times(actorCount, (i) => <input key={i} type='text' placeholder={'Actor '+(i+1)} ref={'actor'+i} className='addMovie'/> )
           }
-          <div 
-            className='regularButton'
+          <button
+            className='big'
             disabled={actorCount >= MAX_ACTORS}
             onClick={this.submitNewMovie}>
             Submit New Movie
-          </div>
+          </button>
         </div>
       </div>
     )

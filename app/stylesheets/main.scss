@@ -1,3 +1,15 @@
+$app-background: #cdd1e9;
+
+// nav menu colors
+$nav-background-color: #234567;
+$nav-item-text-color: #eee;
+$button-hover-color: #123456;
+$nav-header-text-color: #eef;
+
+// table colors
+$table-background-color0: #eef;
+$table-background-color1: #dde;
+
 @import 'normalize';
 
 *,
@@ -11,21 +23,22 @@ html body {
   width: 100%;
   margin: 0;
   user-select: none;
+  background-color: $app-background;
 }
 
 div.app {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: #cce;
+  background-color: $app-background;
   position: absolute;
   height: 100%;
   width: 100%;
   &__nav {
     height: 100%;
     width: 25vw;
-    color: #eee;
-    background-color: rgba(0, 0, 0, 0.65);
+    color: $nav-item-text-color;
+    background-color: $nav-background-color;
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -45,7 +58,7 @@ div.app {
       background-color: rgba(0, 0, 0, 0.7);
     }
     &__header {
-      color: #eed;
+      color: $nav-header-text-color;
       padding: 30px 15px;
       font-size: 1.3rem;
       font-weight: 800;
@@ -68,7 +81,6 @@ div.app {
     justify-content: top;
     &__header {
       font-size: 1.9rem;
-      font-style: italic;
       font-weight: 800;
       margin-bottom: 10px;
       cursor: default;
@@ -76,11 +88,62 @@ div.app {
     &__wrapper {
       display: flex;
       flex-direction: column;
-      input {
-        margin: 10px 0px;
-        width: 300px;
+      input.addMovie {
+        margin: 10px auto;
+        width: 60%;
       }
     }
+  }
+}
+
+div.movieTable {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  &__row {
+    display: flex;
+    flex-direction: row;
+    &__cell {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 10px 15px;
+      font-size: 0.8rem;
+    }
+    &__bigcell {
+      @extend div.movieTable__row__cell;
+      flex: 2;
+    }
+    &:nth-child(even) {
+      background-color: $table-background-color0;
+    }
+    &:nth-child(odd) {
+      background-color: $table-background-color1;
+    }
+    &:first-child {
+      // header
+      user-select: none;
+      cursor: default;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      background-color: $nav-background-color;
+      color: $nav-item-text-color;
+    }
+    &:last-child {
+      border-bottom-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+  }
+  &__empty {
+    display: flex;
+    padding: 10px 15px;
+    font-style: italic;
+    color: #777;
+    flex-direction: row;
+    justify-content: center;
+    background-color: $table-background-color0;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
   }
 }
 
@@ -97,6 +160,61 @@ div.regularButton {
   }
 }
 
+div.errorMessage {
+  padding: 10px 15px;
+  width: 60%;
+  margin: 10px 0px;
+  background-color: #f99;
+  color: #855;
+  border: 1px solid #855;
+  border-radius: 3px;
+}
+
+div.successMessage {
+  @extend div.errorMessage;
+  background-color: #9f9;
+  color: #585;
+  border: 1px solid #585;
+}
+
+input.editMovie {
+  width: 100%;
+}
+
+input.searchBar {
+  width: 80%;
+  margin: 10px 0px;
+}
+
+
+button.small {
+  width: 60%;
+  margin: 3px auto;
+  padding: 4px;
+  border: 1px solid #777;
+  border-radius: 2px;
+  cursor: pointer;
+  background-color: #eee;
+  &:hover {
+    background-color: #ddd;
+  }
+}
+
+button.big {
+  @extend button.small;
+  width: 50%;
+  padding: 15px 15px;
+  background-color: #444;
+  color: #eee;
+  background-color: $button-hover-color;
+  color: $nav-item-text-color;
+  border: none;
+  &:hover {
+    //background-color: $nav-background-color;
+    background-color: $button-hover-color;
+    opacity: 0.9;
+  }
+}
 
 input {
   outline: none;
