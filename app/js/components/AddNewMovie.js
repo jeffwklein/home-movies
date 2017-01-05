@@ -38,6 +38,11 @@ class AddNewMovie extends Component {
     this.refs.genre.value = ''
     this.refs.year.value = ''
     this.refs.rating.value = ''
+    for (let i = 0; i < this.state.actorCount; ++i) {
+      if (this.refs['actor'+i].value) {
+        this.refs['actor'+i].value = ''
+      }
+    }
     this.setState({
       successMessage: 'Added '+ title +' to your collection!',
       titleError: false

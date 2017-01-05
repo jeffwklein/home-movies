@@ -1,6 +1,8 @@
 node_modules
 
-dist/bundle.js
+dist/
 
 # all swap files
 *.swp
+*.bdl
+

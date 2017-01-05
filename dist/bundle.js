@@ -62,7 +62,7 @@
 
 	var _app2 = _interopRequireDefault(_app);
 
-	var _store = __webpack_require__(205);
+	var _store = __webpack_require__(206);
 
 	var _store2 = _interopRequireDefault(_store);
 
@@ -23076,7 +23076,7 @@
 
 
 	// module
-	exports.push([module.id, "/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */\n/**\n * 1. Change the default font family in all browsers (opinionated).\n * 2. Correct the line height in all browsers.\n * 3. Prevent adjustments of font size after orientation changes in\n *    IE on Windows Phone and in iOS.\n */\n/* Document\n   ========================================================================== */\nhtml {\n  font-family: sans-serif;\n  /* 1 */\n  line-height: 1.15;\n  /* 2 */\n  -ms-text-size-adjust: 100%;\n  /* 3 */\n  -webkit-text-size-adjust: 100%;\n  /* 3 */ }\n\n/* Sections\n   ========================================================================== */\n/**\n * Remove the margin in all browsers (opinionated).\n */\nbody {\n  margin: 0; }\n\n/**\n * Add the correct display in IE 9-.\n */\narticle,\naside,\nfooter,\nheader,\nnav,\nsection {\n  display: block; }\n\n/**\n * Correct the font size and margin on `h1` elements within `section` and\n * `article` contexts in Chrome, Firefox, and Safari.\n */\nh1 {\n  font-size: 2em;\n  margin: 0.67em 0; }\n\n/* Grouping content\n   ========================================================================== */\n/**\n * Add the correct display in IE 9-.\n * 1. Add the correct display in IE.\n */\nfigcaption,\nfigure,\nmain {\n  /* 1 */\n  display: block; }\n\n/**\n * Add the correct margin in IE 8.\n */\nfigure {\n  margin: 1em 40px; }\n\n/**\n * 1. Add the correct box sizing in Firefox.\n * 2. Show the overflow in Edge and IE.\n */\nhr {\n  box-sizing: content-box;\n  /* 1 */\n  height: 0;\n  /* 1 */\n  overflow: visible;\n  /* 2 */ }\n\n/**\n * 1. Correct the inheritance and scaling of font size in all browsers.\n * 2. Correct the odd `em` font sizing in all browsers.\n */\npre {\n  font-family: monospace, monospace;\n  /* 1 */\n  font-size: 1em;\n  /* 2 */ }\n\n/* Text-level semantics\n   ========================================================================== */\n/**\n * 1. Remove the gray background on active links in IE 10.\n * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.\n */\na {\n  background-color: transparent;\n  /* 1 */\n  -webkit-text-decoration-skip: objects;\n  /* 2 */ }\n\n/**\n * Remove the outline on focused links when they are also active or hovered\n * in all browsers (opinionated).\n */\na:active,\na:hover {\n  outline-width: 0; }\n\n/**\n * 1. Remove the bottom border in Firefox 39-.\n * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.\n */\nabbr[title] {\n  border-bottom: none;\n  /* 1 */\n  text-decoration: underline;\n  /* 2 */\n  text-decoration: underline dotted;\n  /* 2 */ }\n\n/**\n * Prevent the duplicate application of `bolder` by the next rule in Safari 6.\n */\nb,\nstrong {\n  font-weight: inherit; }\n\n/**\n * Add the correct font weight in Chrome, Edge, and Safari.\n */\nb,\nstrong {\n  font-weight: bolder; }\n\n/**\n * 1. Correct the inheritance and scaling of font size in all browsers.\n * 2. Correct the odd `em` font sizing in all browsers.\n */\ncode,\nkbd,\nsamp {\n  font-family: monospace, monospace;\n  /* 1 */\n  font-size: 1em;\n  /* 2 */ }\n\n/**\n * Add the correct font style in Android 4.3-.\n */\ndfn {\n  font-style: italic; }\n\n/**\n * Add the correct background and color in IE 9-.\n */\nmark {\n  background-color: #ff0;\n  color: #000; }\n\n/**\n * Add the correct font size in all browsers.\n */\nsmall {\n  font-size: 80%; }\n\n/**\n * Prevent `sub` and `sup` elements from affecting the line height in\n * all browsers.\n */\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline; }\n\nsub {\n  bottom: -0.25em; }\n\nsup {\n  top: -0.5em; }\n\n/* Embedded content\n   ========================================================================== */\n/**\n * Add the correct display in IE 9-.\n */\naudio,\nvideo {\n  display: inline-block; }\n\n/**\n * Add the correct display in iOS 4-7.\n */\naudio:not([controls]) {\n  display: none;\n  height: 0; }\n\n/**\n * Remove the border on images inside links in IE 10-.\n */\nimg {\n  border-style: none; }\n\n/**\n * Hide the overflow in IE.\n */\nsvg:not(:root) {\n  overflow: hidden; }\n\n/* Forms\n   ========================================================================== */\n/**\n * 1. Change the font styles in all browsers (opinionated).\n * 2. Remove the margin in Firefox and Safari.\n */\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  font-family: sans-serif;\n  /* 1 */\n  font-size: 100%;\n  /* 1 */\n  line-height: 1.15;\n  /* 1 */\n  margin: 0;\n  /* 2 */ }\n\n/**\n * Show the overflow in IE.\n * 1. Show the overflow in Edge.\n */\nbutton,\ninput {\n  /* 1 */\n  overflow: visible; }\n\n/**\n * Remove the inheritance of text transform in Edge, Firefox, and IE.\n * 1. Remove the inheritance of text transform in Firefox.\n */\nbutton,\nselect {\n  /* 1 */\n  text-transform: none; }\n\n/**\n * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`\n *    controls in Android 4.\n * 2. Correct the inability to style clickable types in iOS and Safari.\n */\nbutton,\nhtml [type=\"button\"],\n[type=\"reset\"],\n[type=\"submit\"] {\n  -webkit-appearance: button;\n  /* 2 */ }\n\n/**\n * Remove the inner border and padding in Firefox.\n */\nbutton::-moz-focus-inner,\n[type=\"button\"]::-moz-focus-inner,\n[type=\"reset\"]::-moz-focus-inner,\n[type=\"submit\"]::-moz-focus-inner {\n  border-style: none;\n  padding: 0; }\n\n/**\n * Restore the focus styles unset by the previous rule.\n */\nbutton:-moz-focusring,\n[type=\"button\"]:-moz-focusring,\n[type=\"reset\"]:-moz-focusring,\n[type=\"submit\"]:-moz-focusring {\n  outline: 1px dotted ButtonText; }\n\n/**\n * Change the border, margin, and padding in all browsers (opinionated).\n */\nfieldset {\n  border: 1px solid #c0c0c0;\n  margin: 0 2px;\n  padding: 0.35em 0.625em 0.75em; }\n\n/**\n * 1. Correct the text wrapping in Edge and IE.\n * 2. Correct the color inheritance from `fieldset` elements in IE.\n * 3. Remove the padding so developers are not caught out when they zero out\n *    `fieldset` elements in all browsers.\n */\nlegend {\n  box-sizing: border-box;\n  /* 1 */\n  color: inherit;\n  /* 2 */\n  display: table;\n  /* 1 */\n  max-width: 100%;\n  /* 1 */\n  padding: 0;\n  /* 3 */\n  white-space: normal;\n  /* 1 */ }\n\n/**\n * 1. Add the correct display in IE 9-.\n * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.\n */\nprogress {\n  display: inline-block;\n  /* 1 */\n  vertical-align: baseline;\n  /* 2 */ }\n\n/**\n * Remove the default vertical scrollbar in IE.\n */\ntextarea {\n  overflow: auto; }\n\n/**\n * 1. Add the correct box sizing in IE 10-.\n * 2. Remove the padding in IE 10-.\n */\n[type=\"checkbox\"],\n[type=\"radio\"] {\n  box-sizing: border-box;\n  /* 1 */\n  padding: 0;\n  /* 2 */ }\n\n/**\n * Correct the cursor style of increment and decrement buttons in Chrome.\n */\n[type=\"number\"]::-webkit-inner-spin-button,\n[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto; }\n\n/**\n * 1. Correct the odd appearance in Chrome and Safari.\n * 2. Correct the outline style in Safari.\n */\n[type=\"search\"] {\n  -webkit-appearance: textfield;\n  /* 1 */\n  outline-offset: -2px;\n  /* 2 */ }\n\n/**\n * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.\n */\n[type=\"search\"]::-webkit-search-cancel-button,\n[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none; }\n\n/**\n * 1. Correct the inability to style clickable types in iOS and Safari.\n * 2. Change font properties to `inherit` in Safari.\n */\n::-webkit-file-upload-button {\n  -webkit-appearance: button;\n  /* 1 */\n  font: inherit;\n  /* 2 */ }\n\n/* Interactive\n   ========================================================================== */\n/*\n * Add the correct display in IE 9-.\n * 1. Add the correct display in Edge, IE, and Firefox.\n */\ndetails,\nmenu {\n  display: block; }\n\n/*\n * Add the correct display in all browsers.\n */\nsummary {\n  display: list-item; }\n\n/* Scripting\n   ========================================================================== */\n/**\n * Add the correct display in IE 9-.\n */\ncanvas {\n  display: inline-block; }\n\n/**\n * Add the correct display in IE.\n */\ntemplate {\n  display: none; }\n\n/* Hidden\n   ========================================================================== */\n/**\n * Add the correct display in IE 10-.\n */\n[hidden] {\n  display: none; }\n\n*,\n*:before,\n*:after {\n  box-sizing: border-box; }\n\nhtml body {\n  height: 100%;\n  width: 100%;\n  margin: 0;\n  user-select: none; }\n\ndiv.app {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  background-color: #cce;\n  position: absolute;\n  height: 100%;\n  width: 100%; }\n  div.app__nav {\n    height: 100%;\n    width: 25vw;\n    color: #eee;\n    background-color: rgba(0, 0, 0, 0.65);\n    display: flex;\n    flex-direction: column;\n    align-items: stretch;\n    justify-content: flex-start; }\n    div.app__nav__item {\n      padding: 15px 30px;\n      cursor: pointer;\n      margin-bottom: 1px; }\n      div.app__nav__item:hover {\n        background-color: rgba(0, 0, 0, 0.3); }\n    div.app__nav__selected {\n      padding: 15px 30px;\n      cursor: default;\n      margin-bottom: 1px;\n      background-color: rgba(0, 0, 0, 0.7); }\n    div.app__nav__header {\n      color: #eed;\n      padding: 30px 15px;\n      font-size: 1.3rem;\n      font-weight: 800;\n      margin-bottom: 10px;\n      background-color: rgba(0, 0, 0, 0.9);\n      cursor: default; }\n  div.app__content {\n    overflow-y: auto;\n    width: 100%;\n    padding: 15px 20px;\n    height: 100%;\n    border-bottom-right-radius: 8px;\n    border-bottom-left-radius: 8px;\n    font-size: 1.4rem;\n    display: flex;\n    flex-direction: column;\n    align-items: stretch;\n    justify-content: top; }\n    div.app__content__header {\n      font-size: 1.9rem;\n      font-style: italic;\n      font-weight: 800;\n      margin-bottom: 10px;\n      cursor: default; }\n    div.app__content__wrapper {\n      display: flex;\n      flex-direction: column; }\n      div.app__content__wrapper input {\n        margin: 10px 0px;\n        width: 300px; }\n\ndiv.regularButton {\n  font-size: 20px;\n  padding: 5px;\n  max-width: 300px;\n  cursor: pointer;\n  background-color: #eee;\n  text-align: center;\n  border: 1px solid #888; }\n  div.regularButton:hover {\n    background-color: #ddd; }\n\ninput {\n  outline: none;\n  padding: 8px;\n  border: 1px solid #999;\n  border-radius: 3px;\n  box-shadow: none; }\n", ""]);
+	exports.push([module.id, "/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */\n/**\n * 1. Change the default font family in all browsers (opinionated).\n * 2. Correct the line height in all browsers.\n * 3. Prevent adjustments of font size after orientation changes in\n *    IE on Windows Phone and in iOS.\n */\n/* Document\n   ========================================================================== */\nhtml {\n  font-family: sans-serif;\n  /* 1 */\n  line-height: 1.15;\n  /* 2 */\n  -ms-text-size-adjust: 100%;\n  /* 3 */\n  -webkit-text-size-adjust: 100%;\n  /* 3 */ }\n\n/* Sections\n   ========================================================================== */\n/**\n * Remove the margin in all browsers (opinionated).\n */\nbody {\n  margin: 0; }\n\n/**\n * Add the correct display in IE 9-.\n */\narticle,\naside,\nfooter,\nheader,\nnav,\nsection {\n  display: block; }\n\n/**\n * Correct the font size and margin on `h1` elements within `section` and\n * `article` contexts in Chrome, Firefox, and Safari.\n */\nh1 {\n  font-size: 2em;\n  margin: 0.67em 0; }\n\n/* Grouping content\n   ========================================================================== */\n/**\n * Add the correct display in IE 9-.\n * 1. Add the correct display in IE.\n */\nfigcaption,\nfigure,\nmain {\n  /* 1 */\n  display: block; }\n\n/**\n * Add the correct margin in IE 8.\n */\nfigure {\n  margin: 1em 40px; }\n\n/**\n * 1. Add the correct box sizing in Firefox.\n * 2. Show the overflow in Edge and IE.\n */\nhr {\n  box-sizing: content-box;\n  /* 1 */\n  height: 0;\n  /* 1 */\n  overflow: visible;\n  /* 2 */ }\n\n/**\n * 1. Correct the inheritance and scaling of font size in all browsers.\n * 2. Correct the odd `em` font sizing in all browsers.\n */\npre {\n  font-family: monospace, monospace;\n  /* 1 */\n  font-size: 1em;\n  /* 2 */ }\n\n/* Text-level semantics\n   ========================================================================== */\n/**\n * 1. Remove the gray background on active links in IE 10.\n * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.\n */\na {\n  background-color: transparent;\n  /* 1 */\n  -webkit-text-decoration-skip: objects;\n  /* 2 */ }\n\n/**\n * Remove the outline on focused links when they are also active or hovered\n * in all browsers (opinionated).\n */\na:active,\na:hover {\n  outline-width: 0; }\n\n/**\n * 1. Remove the bottom border in Firefox 39-.\n * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.\n */\nabbr[title] {\n  border-bottom: none;\n  /* 1 */\n  text-decoration: underline;\n  /* 2 */\n  text-decoration: underline dotted;\n  /* 2 */ }\n\n/**\n * Prevent the duplicate application of `bolder` by the next rule in Safari 6.\n */\nb,\nstrong {\n  font-weight: inherit; }\n\n/**\n * Add the correct font weight in Chrome, Edge, and Safari.\n */\nb,\nstrong {\n  font-weight: bolder; }\n\n/**\n * 1. Correct the inheritance and scaling of font size in all browsers.\n * 2. Correct the odd `em` font sizing in all browsers.\n */\ncode,\nkbd,\nsamp {\n  font-family: monospace, monospace;\n  /* 1 */\n  font-size: 1em;\n  /* 2 */ }\n\n/**\n * Add the correct font style in Android 4.3-.\n */\ndfn {\n  font-style: italic; }\n\n/**\n * Add the correct background and color in IE 9-.\n */\nmark {\n  background-color: #ff0;\n  color: #000; }\n\n/**\n * Add the correct font size in all browsers.\n */\nsmall {\n  font-size: 80%; }\n\n/**\n * Prevent `sub` and `sup` elements from affecting the line height in\n * all browsers.\n */\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline; }\n\nsub {\n  bottom: -0.25em; }\n\nsup {\n  top: -0.5em; }\n\n/* Embedded content\n   ========================================================================== */\n/**\n * Add the correct display in IE 9-.\n */\naudio,\nvideo {\n  display: inline-block; }\n\n/**\n * Add the correct display in iOS 4-7.\n */\naudio:not([controls]) {\n  display: none;\n  height: 0; }\n\n/**\n * Remove the border on images inside links in IE 10-.\n */\nimg {\n  border-style: none; }\n\n/**\n * Hide the overflow in IE.\n */\nsvg:not(:root) {\n  overflow: hidden; }\n\n/* Forms\n   ========================================================================== */\n/**\n * 1. Change the font styles in all browsers (opinionated).\n * 2. Remove the margin in Firefox and Safari.\n */\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  font-family: sans-serif;\n  /* 1 */\n  font-size: 100%;\n  /* 1 */\n  line-height: 1.15;\n  /* 1 */\n  margin: 0;\n  /* 2 */ }\n\n/**\n * Show the overflow in IE.\n * 1. Show the overflow in Edge.\n */\nbutton,\ninput {\n  /* 1 */\n  overflow: visible; }\n\n/**\n * Remove the inheritance of text transform in Edge, Firefox, and IE.\n * 1. Remove the inheritance of text transform in Firefox.\n */\nbutton,\nselect {\n  /* 1 */\n  text-transform: none; }\n\n/**\n * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`\n *    controls in Android 4.\n * 2. Correct the inability to style clickable types in iOS and Safari.\n */\nbutton,\nhtml [type=\"button\"],\n[type=\"reset\"],\n[type=\"submit\"] {\n  -webkit-appearance: button;\n  /* 2 */ }\n\n/**\n * Remove the inner border and padding in Firefox.\n */\nbutton::-moz-focus-inner,\n[type=\"button\"]::-moz-focus-inner,\n[type=\"reset\"]::-moz-focus-inner,\n[type=\"submit\"]::-moz-focus-inner {\n  border-style: none;\n  padding: 0; }\n\n/**\n * Restore the focus styles unset by the previous rule.\n */\nbutton:-moz-focusring,\n[type=\"button\"]:-moz-focusring,\n[type=\"reset\"]:-moz-focusring,\n[type=\"submit\"]:-moz-focusring {\n  outline: 1px dotted ButtonText; }\n\n/**\n * Change the border, margin, and padding in all browsers (opinionated).\n */\nfieldset {\n  border: 1px solid #c0c0c0;\n  margin: 0 2px;\n  padding: 0.35em 0.625em 0.75em; }\n\n/**\n * 1. Correct the text wrapping in Edge and IE.\n * 2. Correct the color inheritance from `fieldset` elements in IE.\n * 3. Remove the padding so developers are not caught out when they zero out\n *    `fieldset` elements in all browsers.\n */\nlegend {\n  box-sizing: border-box;\n  /* 1 */\n  color: inherit;\n  /* 2 */\n  display: table;\n  /* 1 */\n  max-width: 100%;\n  /* 1 */\n  padding: 0;\n  /* 3 */\n  white-space: normal;\n  /* 1 */ }\n\n/**\n * 1. Add the correct display in IE 9-.\n * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.\n */\nprogress {\n  display: inline-block;\n  /* 1 */\n  vertical-align: baseline;\n  /* 2 */ }\n\n/**\n * Remove the default vertical scrollbar in IE.\n */\ntextarea {\n  overflow: auto; }\n\n/**\n * 1. Add the correct box sizing in IE 10-.\n * 2. Remove the padding in IE 10-.\n */\n[type=\"checkbox\"],\n[type=\"radio\"] {\n  box-sizing: border-box;\n  /* 1 */\n  padding: 0;\n  /* 2 */ }\n\n/**\n * Correct the cursor style of increment and decrement buttons in Chrome.\n */\n[type=\"number\"]::-webkit-inner-spin-button,\n[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto; }\n\n/**\n * 1. Correct the odd appearance in Chrome and Safari.\n * 2. Correct the outline style in Safari.\n */\n[type=\"search\"] {\n  -webkit-appearance: textfield;\n  /* 1 */\n  outline-offset: -2px;\n  /* 2 */ }\n\n/**\n * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.\n */\n[type=\"search\"]::-webkit-search-cancel-button,\n[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none; }\n\n/**\n * 1. Correct the inability to style clickable types in iOS and Safari.\n * 2. Change font properties to `inherit` in Safari.\n */\n::-webkit-file-upload-button {\n  -webkit-appearance: button;\n  /* 1 */\n  font: inherit;\n  /* 2 */ }\n\n/* Interactive\n   ========================================================================== */\n/*\n * Add the correct display in IE 9-.\n * 1. Add the correct display in Edge, IE, and Firefox.\n */\ndetails,\nmenu {\n  display: block; }\n\n/*\n * Add the correct display in all browsers.\n */\nsummary {\n  display: list-item; }\n\n/* Scripting\n   ========================================================================== */\n/**\n * Add the correct display in IE 9-.\n */\ncanvas {\n  display: inline-block; }\n\n/**\n * Add the correct display in IE.\n */\ntemplate {\n  display: none; }\n\n/* Hidden\n   ========================================================================== */\n/**\n * Add the correct display in IE 10-.\n */\n[hidden] {\n  display: none; }\n\n*,\n*:before,\n*:after {\n  box-sizing: border-box; }\n\nhtml body {\n  height: 100%;\n  width: 100%;\n  margin: 0;\n  user-select: none;\n  background-color: #cdd1e9; }\n\ndiv.app {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  background-color: #cdd1e9;\n  position: absolute;\n  height: 100%;\n  width: 100%; }\n  div.app__nav {\n    height: 100%;\n    width: 25vw;\n    color: #eee;\n    background-color: #234567;\n    display: flex;\n    flex-direction: column;\n    align-items: stretch;\n    justify-content: flex-start; }\n    div.app__nav__item {\n      padding: 15px 30px;\n      cursor: pointer;\n      margin-bottom: 1px; }\n      div.app__nav__item:hover {\n        background-color: rgba(0, 0, 0, 0.3); }\n    div.app__nav__selected {\n      padding: 15px 30px;\n      cursor: default;\n      margin-bottom: 1px;\n      background-color: rgba(0, 0, 0, 0.7); }\n    div.app__nav__header {\n      color: #eef;\n      padding: 30px 15px;\n      font-size: 1.3rem;\n      font-weight: 800;\n      margin-bottom: 10px;\n      background-color: rgba(0, 0, 0, 0.9);\n      cursor: default; }\n  div.app__content {\n    overflow-y: auto;\n    width: 100%;\n    padding: 15px 20px;\n    height: 100%;\n    border-bottom-right-radius: 8px;\n    border-bottom-left-radius: 8px;\n    font-size: 1.4rem;\n    display: flex;\n    flex-direction: column;\n    align-items: stretch;\n    justify-content: top; }\n    div.app__content__header {\n      font-size: 1.9rem;\n      font-weight: 800;\n      margin-bottom: 10px;\n      cursor: default; }\n    div.app__content__wrapper {\n      display: flex;\n      flex-direction: column; }\n      div.app__content__wrapper input.addMovie {\n        margin: 10px auto;\n        width: 60%; }\n\ndiv.movieTable {\n  display: flex;\n  flex-direction: column;\n  width: 100%; }\n  div.movieTable__row {\n    display: flex;\n    flex-direction: row; }\n    div.movieTable__row__cell, div.movieTable__row__bigcell {\n      flex: 1;\n      display: flex;\n      flex-direction: column;\n      padding: 10px 15px;\n      font-size: 0.8rem; }\n    div.movieTable__row__bigcell {\n      flex: 2; }\n    div.movieTable__row:nth-child(even) {\n      background-color: #eef; }\n    div.movieTable__row:nth-child(odd) {\n      background-color: #dde; }\n    div.movieTable__row:first-child {\n      user-select: none;\n      cursor: default;\n      border-top-left-radius: 8px;\n      border-top-right-radius: 8px;\n      background-color: #234567;\n      color: #eee; }\n    div.movieTable__row:last-child {\n      border-bottom-right-radius: 8px;\n      border-bottom-left-radius: 8px; }\n  div.movieTable__empty {\n    display: flex;\n    padding: 10px 15px;\n    font-style: italic;\n    color: #777;\n    flex-direction: row;\n    justify-content: center;\n    background-color: #eef;\n    border-bottom-right-radius: 8px;\n    border-bottom-left-radius: 8px; }\n\ndiv.regularButton {\n  font-size: 20px;\n  padding: 5px;\n  max-width: 300px;\n  cursor: pointer;\n  background-color: #eee;\n  text-align: center;\n  border: 1px solid #888; }\n  div.regularButton:hover {\n    background-color: #ddd; }\n\ndiv.errorMessage, div.successMessage {\n  padding: 10px 15px;\n  width: 60%;\n  margin: 10px 0px;\n  background-color: #f99;\n  color: #855;\n  border: 1px solid #855;\n  border-radius: 3px; }\n\ndiv.successMessage {\n  background-color: #9f9;\n  color: #585;\n  border: 1px solid #585; }\n\ninput.editMovie {\n  width: 100%; }\n\ninput.searchBar {\n  width: 80%;\n  margin: 10px 0px; }\n\nbutton.small, button.big {\n  width: 60%;\n  margin: 3px auto;\n  padding: 4px;\n  border: 1px solid #777;\n  border-radius: 2px;\n  cursor: pointer;\n  background-color: #eee; }\n  button.small:hover, button.big:hover {\n    background-color: #ddd; }\n\nbutton.big {\n  width: 50%;\n  padding: 15px 15px;\n  background-color: #444;\n  color: #eee;\n  background-color: #123456;\n  color: #eee;\n  border: none; }\n  button.big:hover {\n    background-color: #123456;\n    opacity: 0.9; }\n\ninput {\n  outline: none;\n  padding: 8px;\n  border: 1px solid #999;\n  border-radius: 3px;\n  box-shadow: none; }\n", ""]);
 
 	// exports
 
@@ -23412,13 +23412,13 @@
 
 	var _AddNewMovie2 = _interopRequireDefault(_AddNewMovie);
 
-	var _ViewAndEditMovies = __webpack_require__(203);
+	var _ViewMovies = __webpack_require__(203);
 
-	var _ViewAndEditMovies2 = _interopRequireDefault(_ViewAndEditMovies);
+	var _ViewMovies2 = _interopRequireDefault(_ViewMovies);
 
-	var _SearchMovies = __webpack_require__(204);
+	var _EditMovies = __webpack_require__(205);
 
-	var _SearchMovies2 = _interopRequireDefault(_SearchMovies);
+	var _EditMovies2 = _interopRequireDefault(_EditMovies);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -23437,10 +23437,8 @@
 	    var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this));
 
 	    _this.state = {
-	      //content: null,
-	      component: null,
-	      selectedIndex: null,
-	      navItems: [{ label: "Add New Movie", component: _react2.default.createElement(_AddNewMovie2.default, null) }, { label: "View and Edit Movies", component: _react2.default.createElement(_ViewAndEditMovies2.default, null) }, { label: "Search Movies", component: _react2.default.createElement(_SearchMovies2.default, null) }]
+	      selectedIndex: 0,
+	      navItems: [{ label: 'My Movies', component: _react2.default.createElement(_ViewMovies2.default, null) }, { label: 'Add Movie', component: _react2.default.createElement(_AddNewMovie2.default, null) }, { label: 'Edit Movies', component: _react2.default.createElement(_EditMovies2.default, null) }]
 	    };
 	    return _this;
 	  }
@@ -23451,7 +23449,6 @@
 	      var _this2 = this;
 
 	      var _state = this.state;
-	      var component = _state.component;
 	      var navItems = _state.navItems;
 	      var selectedIndex = _state.selectedIndex;
 
@@ -23464,20 +23461,23 @@
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'app__nav__header' },
-	            'Home Movie DB'
+	            'Home Movies'
 	          ),
+
+	          // populate the nav menu
 	          navItems.map(function (item, i) {
-	            var cssClass = 'app__nav' + (selectedIndex === i ? '__selected' : '__item');
 	            return _react2.default.createElement(
 	              'div',
-	              { className: cssClass, key: i, onClick: function onClick() {
-	                  return _this2.setState({ component: item.component, selectedIndex: i });
+	              { key: i,
+	                className: 'app__nav' + (selectedIndex === i ? '__selected' : '__item'),
+	                onClick: function onClick() {
+	                  return _this2.setState({ selectedIndex: i });
 	                } },
 	              item.label
 	            );
 	          })
 	        ),
-	        component
+	        navItems[selectedIndex].component
 	      );
 	    }
 	  }]);
@@ -23542,6 +23542,14 @@
 	    key: 'submitNewMovie',
 	    value: function submitNewMovie() {
 	      var title = this.refs.title.value;
+	      // ensure that a title has been provided, exit if not
+	      if (!title) {
+	        this.setState({
+	          successMessage: null,
+	          titleError: true
+	        });
+	        return;
+	      }
 	      var genre = this.refs.genre.value;
 	      var year = this.refs.year.value;
 	      var rating = this.refs.rating.value;
@@ -23551,15 +23559,31 @@
 	          actors.push(this.refs['actor' + i].value);
 	        }
 	      }
+	      // SUCCESS
 	      this.props.addMovie({ title: title, genre: genre, year: year, rating: rating, actors: actors });
-	      //this.props.exit()
+	      this.refs.title.value = '';
+	      this.refs.genre.value = '';
+	      this.refs.year.value = '';
+	      this.refs.rating.value = '';
+	      for (var _i = 0; _i < this.state.actorCount; ++_i) {
+	        if (this.refs['actor' + _i].value) {
+	          this.refs['actor' + _i].value = '';
+	        }
+	      }
+	      this.setState({
+	        successMessage: 'Added ' + title + ' to your collection!',
+	        titleError: false
+	      });
 	    }
 	  }, {
 	    key: 'render',
 	    value: function render() {
 	      var _this2 = this;
 
-	      var actorCount = this.state.actorCount;
+	      var _state = this.state;
+	      var actorCount = _state.actorCount;
+	      var titleError = _state.titleError;
+	      var successMessage = _state.successMessage;
 
 	      return _react2.default.createElement(
 	        'div',
@@ -23569,22 +23593,31 @@
 	          { className: 'app__content__header' },
 	          'Add a movie to your collection'
 	        ),
+
+	        // if added successfully, display message
+	        successMessage ? _react2.default.createElement(
+	          'div',
+	          { className: 'successMessage' },
+	          successMessage
+	        ) : null,
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'app__content__wrapper' },
-	          'Title',
-	          _react2.default.createElement('input', { type: 'text', ref: 'title', placeholder: 'Enter title' }),
-	          'Genre',
-	          _react2.default.createElement('input', { type: 'text', ref: 'genre', placeholder: 'Enter Genre' }),
-	          'Year',
-	          _react2.default.createElement('input', { type: 'text', ref: 'year', placeholder: 'Enter Year' }),
-	          'Rating',
-	          _react2.default.createElement('input', { type: 'text', ref: 'rating', placeholder: 'Rating' }),
-	          'Actors (Max 5)',
-	          _react2.default.createElement(
+
+	          // if no title provided, display this error
+	          titleError ? _react2.default.createElement(
 	            'div',
+	            { className: 'errorMessage' },
+	            'You must provide a movie title.'
+	          ) : null,
+	          _react2.default.createElement('input', { type: 'text', ref: 'title', placeholder: 'Enter title', className: 'addMovie' }),
+	          _react2.default.createElement('input', { type: 'text', ref: 'genre', placeholder: 'Enter Genre', className: 'addMovie' }),
+	          _react2.default.createElement('input', { type: 'text', ref: 'year', placeholder: 'Enter Year', className: 'addMovie' }),
+	          _react2.default.createElement('input', { type: 'text', ref: 'rating', placeholder: 'Rating', className: 'addMovie' }),
+	          _react2.default.createElement(
+	            'button',
 	            {
-	              className: 'regularButton',
+	              className: 'small',
 	              disabled: actorCount >= MAX_ACTORS,
 	              onClick: function onClick() {
 	                return _this2.setState({ actorCount: actorCount + (actorCount < MAX_ACTORS ? 1 : 0) });
@@ -23592,21 +23625,21 @@
 	            'Add Another Actor'
 	          ),
 	          _react2.default.createElement(
-	            'div',
+	            'button',
 	            {
-	              className: 'regularButton',
+	              className: 'small',
 	              onClick: function onClick() {
 	                return _this2.setState({ actorCount: actorCount - (actorCount > 1 ? 1 : 0) });
 	              } },
 	            'Remove Last Actor'
 	          ),
 	          _lodash2.default.times(actorCount, function (i) {
-	            return _react2.default.createElement('input', { key: i, type: 'text', placeholder: 'Actor ' + (i + 1), ref: 'actor' + i });
+	            return _react2.default.createElement('input', { key: i, type: 'text', placeholder: 'Actor ' + (i + 1), ref: 'actor' + i, className: 'addMovie' });
 	          }),
 	          _react2.default.createElement(
-	            'div',
+	            'button',
 	            {
-	              className: 'regularButton',
+	              className: 'big',
 	              disabled: actorCount >= MAX_ACTORS,
 	              onClick: this.submitNewMovie },
 	            'Submit New Movie'
@@ -40636,6 +40669,10 @@
 
 	var _reactRedux = __webpack_require__(172);
 
+	var _SearchBar = __webpack_require__(204);
+
+	var _SearchBar2 = _interopRequireDefault(_SearchBar);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -40644,47 +40681,101 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var ViewAndEditMovies = function (_Component) {
-	  _inherits(ViewAndEditMovies, _Component);
+	var ViewMovies = function (_Component) {
+	  _inherits(ViewMovies, _Component);
 
-	  function ViewAndEditMovies() {
-	    _classCallCheck(this, ViewAndEditMovies);
+	  function ViewMovies() {
+	    _classCallCheck(this, ViewMovies);
 
-	    return _possibleConstructorReturn(this, (ViewAndEditMovies.__proto__ || Object.getPrototypeOf(ViewAndEditMovies)).call(this));
+	    var _this = _possibleConstructorReturn(this, (ViewMovies.__proto__ || Object.getPrototypeOf(ViewMovies)).call(this));
+
+	    _this.headerRow = [{ label: 'Title', big: true }, { label: 'Genre' }, { label: 'Year' }, { label: 'Rating' }, { label: 'Actors', big: true }].map(function (headerItem, i) {
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'movieTable__row' + (headerItem.big ? '__bigcell' : '__cell'), key: i },
+	        headerItem.label
+	      );
+	    });
+	    _this.emptyRow = _react2.default.createElement(
+	      'div',
+	      { className: 'movieTable__empty' },
+	      'No movies found!'
+	    );
+	    return _this;
 	  }
 
-	  _createClass(ViewAndEditMovies, [{
+	  _createClass(ViewMovies, [{
 	    key: 'render',
 	    value: function render() {
-	      var movieList = this.props.store.movieList;
+	      var filteredMovieList = this.props.store.filteredMovieList;
 
-	      console.log(movieList);
+	      var movieListComponent = filteredMovieList.map(function (movie, i) {
+	        return _react2.default.createElement(
+	          'div',
+	          { className: 'movieTable__row', key: i },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'movieTable__row__bigcell' },
+	            movie.title
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'movieTable__row__cell' },
+	            movie.genre
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'movieTable__row__cell' },
+	            movie.year
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'movieTable__row__cell' },
+	            movie.rating
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'movieTable__row__bigcell' },
+	            movie.actors.join(', ')
+	          )
+	        );
+	      });
+
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'app__content' },
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'app__content__header' },
-	          'View and edit your movie collection'
+	          'Your Movie Collection'
 	        ),
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'app__content__wrapper' },
-	          _react2.default.createElement('div', { className: 'movieTable__row__header' }),
-	          _react2.default.createElement('div', { className: 'movieTable__row__header' })
+	          _react2.default.createElement(_SearchBar2.default, null),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'movieTable' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'movieTable__row' },
+	              this.headerRow
+	            ),
+	            filteredMovieList.length > 0 ? movieListComponent : this.emptyRow
+	          )
 	        )
 	      );
 	    }
 	  }]);
 
-	  return ViewAndEditMovies;
+	  return ViewMovies;
 	}(_react.Component);
 
 	exports.default = (0, _reactRedux.connect)(function (store) {
 	  return { store: store };
 	}, function (dispatch) {
 	  return {};
-	})(ViewAndEditMovies);
+	})(ViewMovies);
 
 /***/ },
 /* 204 */
@@ -40712,38 +40803,77 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var SearchMovies = function (_Component) {
-	  _inherits(SearchMovies, _Component);
+	var SearchBar = function (_Component) {
+	  _inherits(SearchBar, _Component);
 
-	  function SearchMovies() {
-	    _classCallCheck(this, SearchMovies);
+	  function SearchBar() {
+	    _classCallCheck(this, SearchBar);
 
-	    return _possibleConstructorReturn(this, (SearchMovies.__proto__ || Object.getPrototypeOf(SearchMovies)).call(this));
+	    var _this = _possibleConstructorReturn(this, (SearchBar.__proto__ || Object.getPrototypeOf(SearchBar)).call(this));
+
+	    _this.searchInputChanged = _this.searchInputChanged.bind(_this);
+	    _this.updateTimeout = _this.updateTimeout.bind(_this);
+	    return _this;
 	  }
 
-	  _createClass(SearchMovies, [{
+	  _createClass(SearchBar, [{
+	    key: 'componentWillMount',
+	    value: function componentWillMount() {
+	      // reset search terms on navigation to page
+	      this.props.clearQuery();
+	    }
+	  }, {
+	    key: 'searchInputChanged',
+	    value: function searchInputChanged() {
+	      var _this2 = this;
+
+	      var query = this.refs.search.value;
+	      setTimeout(function () {
+	        return _this2.updateTimeout(query);
+	      }, 100);
+	    }
+	  }, {
+	    key: 'updateTimeout',
+	    value: function updateTimeout(query) {
+	      var newQuery = this.refs.search.value;
+	      // if user has stopped typing for 100ms -- reduce lag
+	      if (newQuery === query) {
+	        this.props.filterMovies(query);
+	      }
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
-	      return _react2.default.createElement(
-	        'div',
-	        { className: 'app__content' },
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'app__content__header' },
-	          'Search movies'
-	        )
-	      );
+	      return _react2.default.createElement('input', {
+	        type: 'text',
+	        ref: 'search',
+	        onChange: this.searchInputChanged,
+	        placeholder: 'Search Movies...',
+	        className: 'searchBar'
+	      });
 	    }
 	  }]);
 
-	  return SearchMovies;
+	  return SearchBar;
 	}(_react.Component);
 
 	exports.default = (0, _reactRedux.connect)(function (store) {
 	  return { store: store };
 	}, function (dispatch) {
-	  return {};
-	})(SearchMovies);
+	  return {
+	    filterMovies: function filterMovies(query) {
+	      return dispatch({
+	        type: 'FILTER_MOVIES',
+	        query: query
+	      });
+	    },
+	    clearQuery: function clearQuery(query) {
+	      return dispatch({
+	        type: 'CLEAR_QUERY'
+	      });
+	    }
+	  };
+	})(SearchBar);
 
 /***/ },
 /* 205 */
@@ -40755,9 +40885,200 @@
 	  value: true
 	});
 
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRedux = __webpack_require__(172);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var EditMovies = function (_Component) {
+	  _inherits(EditMovies, _Component);
+
+	  function EditMovies() {
+	    _classCallCheck(this, EditMovies);
+
+	    var _this = _possibleConstructorReturn(this, (EditMovies.__proto__ || Object.getPrototypeOf(EditMovies)).call(this));
+
+	    _this.headerRow = [{ label: 'Title', big: true }, { label: 'Genre' }, { label: 'Year' }, { label: 'Rating' }, { label: 'Actors', big: true }].map(function (headerItem, i) {
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'movieTable__row' + (headerItem.big ? '__bigcell' : '__cell'), key: i },
+	        headerItem.label
+	      );
+	    });
+	    _this.emptyRow = _react2.default.createElement(
+	      'div',
+	      { className: 'movieTable__empty' },
+	      'There are no movies in your collection yet!'
+	    );
+	    _this.submitSaveData = _this.submitSaveData.bind(_this);
+	    return _this;
+	  }
+
+	  _createClass(EditMovies, [{
+	    key: 'submitSaveData',
+	    value: function submitSaveData() {
+	      var _this2 = this;
+
+	      var movieList = this.props.store.movieList;
+
+	      var newMovieList = movieList.map(function (movie, i) {
+	        var title = _this2.refs['title' + i].value;
+	        if (!title) {
+	          // TODO: display error if no title ?
+	          return;
+	        }
+	        var genre = _this2.refs['genre' + i].value;
+	        var year = _this2.refs['year' + i].value;
+	        var rating = _this2.refs['rating' + i].value;
+	        var actors = [];
+	        for (var j = 0; j < movie.actors.length; ++j) {
+	          if (_this2.refs['actor-' + i + '-' + j].value) {
+	            actors.push(_this2.refs['actor-' + i + '-' + j].value);
+	          }
+	        }
+	        return { title: title, genre: genre, year: year, rating: rating, actors: actors };
+	      });
+	      this.props.updateMovieList(newMovieList);
+	      // TODO: function returns user to view movie screen ?
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var _this3 = this;
+
+	      var movieList = this.props.store.movieList;
+
+	      var movieListComponent = movieList.map(function (movie, i) {
+	        return _react2.default.createElement(
+	          'div',
+	          { className: 'movieTable__row', key: i },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'movieTable__row__bigcell' },
+	            _react2.default.createElement('input', { type: 'text', ref: 'title' + i, defaultValue: movie.title, className: 'editMovie' })
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'movieTable__row__cell' },
+	            _react2.default.createElement('input', { type: 'text', ref: 'genre' + i, defaultValue: movie.genre, className: 'editMovie' })
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'movieTable__row__cell' },
+	            _react2.default.createElement('input', { type: 'text', ref: 'year' + i, defaultValue: movie.year, className: 'editMovie' })
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'movieTable__row__cell' },
+	            _react2.default.createElement('input', { type: 'text', ref: 'rating' + i, defaultValue: movie.rating, className: 'editMovie' })
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'movieTable__row__bigcell' },
+	            _react2.default.createElement(
+	              'button',
+	              { className: 'small', onClick: function onClick() {
+	                  return _this3.props.addActor(i);
+	                } },
+	              'Add Actor'
+	            ),
+	            _react2.default.createElement(
+	              'button',
+	              { className: 'small', onClick: function onClick() {
+	                  return _this3.props.removeLastActor(i);
+	                } },
+	              'Remove Last Actor'
+	            ),
+	            movie.actors.map(function (actor, j) {
+	              return _react2.default.createElement('input', { type: 'text', ref: 'actor-' + i + '-' + j, defaultValue: actor, className: 'editMovie', key: j });
+	            })
+	          )
+	        );
+	      });
+
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'app__content' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'app__content__header' },
+	          'Edit Movies'
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'app__content__wrapper' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'movieTable' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'movieTable__row' },
+	              this.headerRow
+	            ),
+	            movieList.length > 0 ? movieListComponent : this.emptyRow
+	          ),
+	          _react2.default.createElement(
+	            'button',
+	            { className: 'big', onClick: this.submitSaveData },
+	            'Save Data'
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return EditMovies;
+	}(_react.Component);
+
+	exports.default = (0, _reactRedux.connect)(function (store) {
+	  return { store: store };
+	}, function (dispatch) {
+	  return {
+	    addActor: function addActor(index) {
+	      return dispatch({
+	        type: 'ADD_ACTOR',
+	        index: index
+	      });
+	    },
+	    removeLastActor: function removeLastActor(index) {
+	      return dispatch({
+	        type: 'REMOVE_LAST_ACTOR',
+	        index: index
+	      });
+	    },
+	    updateMovieList: function updateMovieList(movieList) {
+	      return dispatch({
+	        type: 'UPDATE_MOVIE_LIST',
+	        movieList: movieList
+	      });
+	    }
+	  };
+	})(EditMovies);
+
+/***/ },
+/* 206 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
 	var _redux = __webpack_require__(179);
 
-	var _reducers = __webpack_require__(206);
+	var _reducers = __webpack_require__(207);
 
 	var _reducers2 = _interopRequireDefault(_reducers);
 
@@ -40774,7 +41095,7 @@
 	};
 
 /***/ },
-/* 206 */
+/* 207 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -40783,6 +41104,8 @@
 	  value: true
 	});
 
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
@@ -40790,20 +41113,111 @@
 	exports.default = function () {
 	  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {
 	    // list of objects, each containing info about a movie
-	    movieList: []
+	    movieList: [],
+	    filteredMovieList: [],
+	    query: '',
+	    sortFunction: function sortFunction(a, b) {
+	      return a.title.toLowerCase() > b.title.toLowerCase() ? 1 : -1;
+	    }
 	  };
 	  var action = arguments[1];
 
-	  switch (action.type) {
-	    case 'ADD_MOVIE':
-	      console.log(action);
-	      return _extends({}, state, {
-	        movieList: [].concat(_toConsumableArray(state.movieList), [action.movieData])
-	      });
-	    default:
-	      return state;
-	  }
+	  var _ret = function () {
+	    switch (action.type) {
+	      case 'ADD_MOVIE':
+	        return {
+	          v: _extends({}, state, {
+	            movieList: [].concat(_toConsumableArray(state.movieList), [action.movieData]).sort(state.sortFunction)
+	          })
+	        };
+	      case 'UPDATE_MOVIE_LIST':
+	        return {
+	          v: _extends({}, state, {
+	            movieList: action.movieList
+	          })
+	        };
+	      case 'ADD_ACTOR':
+	        if (state.movieList[action.index].actors.length >= 5) {
+	          return {
+	            v: state
+	          };
+	        }
+	        return {
+	          v: _extends({}, state, {
+	            movieList: [].concat(_toConsumableArray(state.movieList.slice(0, action.index)), [_extends({}, state.movieList[action.index], {
+	              actors: [].concat(_toConsumableArray(state.movieList[action.index].actors), [''])
+	            })], _toConsumableArray(state.movieList.slice(action.index + 1)))
+	          })
+	        };
+	      case 'REMOVE_LAST_ACTOR':
+	        var newActorList = [].concat(_toConsumableArray(state.movieList[action.index].actors));
+	        newActorList.pop();
+	        return {
+	          v: _extends({}, state, {
+	            movieList: [].concat(_toConsumableArray(state.movieList.slice(0, action.index)), [_extends({}, state.movieList[action.index], {
+	              actors: newActorList
+	            })], _toConsumableArray(state.movieList.slice(action.index + 1)))
+	          })
+	        };
+	      case 'FILTER_MOVIES':
+	        var query = action.query.toLowerCase();
+	        if (!query) {
+	          console.log('called');
+	          return {
+	            v: _extends({}, state, {
+	              filteredMovieList: state.movieList
+	            })
+	          };
+	        }
+	        // optimization: limit search to current filtered list if previous query starts with new query
+	        var searchMovieList = query.startsWith(state.query.toLowerCase()) ? [].concat(_toConsumableArray(state.filteredMovieList)) : [].concat(_toConsumableArray(state.movieList));
+	        var filteredMovieList = searchMovieList.filter(function (movie) {
+	          return [movie.title, movie.genre, movie.year].concat(_toConsumableArray(movie.actors)).some(function (element) {
+	            return element.toLowerCase().includes(query);
+	          });
+	        });
+	        return {
+	          v: _extends({}, state, {
+	            filteredMovieList: filteredMovieList,
+	            query: query
+	          })
+	        };
+	      case 'CLEAR_QUERY':
+	        return {
+	          v: _extends({}, state, {
+	            filteredMovieList: state.movieList,
+	            query: ''
+	          })
+	        };
+	      default:
+	        return {
+	          v: state
+	        };
+	    }
+	  }();
+
+	  if ((typeof _ret === 'undefined' ? 'undefined' : _typeof(_ret)) === "object") return _ret.v;
 	};
+
+	var testMovieList = [{
+	  title: 'Home Alone 2',
+	  genre: 'Comedy',
+	  rating: '7.7',
+	  year: '1992',
+	  actors: ['Tom Cruise', 'Tom Hanks', 'Matt Damon']
+	}, {
+	  title: 'The Sum of All Fears',
+	  genre: 'Action',
+	  rating: '5.6',
+	  year: '2001',
+	  actors: ['Dwayne Johnson', 'Scarlett Johanssen', 'Catherine Zeta-Jones', 'Morgan Freeman']
+	}, {
+	  title: 'Another test movie',
+	  genre: 'Comedy',
+	  rating: '8.8',
+	  year: '2014',
+	  actors: []
+	}];
 
 /***/ }
 /******/ ]);
